@@ -1,4 +1,59 @@
+:root {
+  --offset: 4em;
+  --inner-spacing: 2em;
+}
+
 .container {
   max-width: 1140px;
   margin-inline: auto;
+}
+
+.container:not(.header.container) {
+  padding-block: var(--offset);
+  padding-inline: var(--inner-spacing);
+}
+
+.title,
+.title.dark {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.title > * + *,
+.title.dark > * + * {
+  margin-top: 1em;
+}
+
+.title h1 {
+  color: #000;
+  font-size: 3rem;
+}
+
+.title p {
+  color: #ccc;
+  font-size: 1.25rem;
+}
+
+.title.dark h1 {
+  color: #fff;
+}
+
+.title.dark p {
+  color: #888;
+}
+
+.botao {
+  display: inline-block;
+  background: #b28257;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  border-radius: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #a0754e;
 }

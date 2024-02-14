@@ -4,4 +4,5 @@
 
 @import "./components/components.css";
 
-@import "./banner/banner.css";
+@import "./main/banner.css";
+@import "./main/about.css";
