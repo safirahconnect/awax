@@ -13,6 +13,10 @@
   padding-inline: var(--inner-spacing);
 }
 
+.container > * + *:not(.header.container nav) {
+  margin-top: var(--offset);
+}
+
 .title,
 .title.dark {
   text-align: center;
@@ -31,7 +35,7 @@
 }
 
 .title p {
-  color: #ccc;
+  color: #adadad;
   font-size: 1.25rem;
 }
 
