@@ -18,7 +18,7 @@
       <figure>
         <img src="./assets/images/logo.svg" alt="Logo da Awax">
       </figure>
-      <nav>
+      <nav aria-label="primary">
         <ul class="header-menu">
           <li><a href="">home</a></li>
           <li><a href="">about us</a></li>
@@ -35,8 +35,8 @@
   </header>
 
   <main>
-    <section class="banner">
-      <ul class="banner-sliders" style="margin-left: 0vw;">
+    <section class="banner" aria-label="aria-banner">
+      <ul class="banner-sliders">
         <li class="banner-slide">
           <div class="banner-slide-area">
             <h1>Design is about <span>communication<span></h1>
@@ -66,10 +66,10 @@
       </ul>
     </section>
 
-    <section class="about-bg">
+    <article class="about-bg" aria-labelledby="aria-about-us">
       <div class="about container">
         <div class="title">
-          <h1>About us</h1>
+          <h1 id="aria-about-us">About us</h1>
           <p>Who are we?</p>
         </div>
         <div class="about-area">
@@ -81,6 +81,37 @@
             <iframe width="480" height="315" src="https://www.youtube.com/embed/c36u4zTb05E?si=5fg9LWvBiD4_BQki" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
+      </div>
+    </article>
+
+    <section aria-label="aria-services" class="services-bg">
+      <div class="services container">
+        <div class="title dark">
+          <h1 id="aria-services">services</h1>
+          <p>services that we provide</p>
+        </div>
+        <ul class="services-list">
+          <li class="service-item">
+            <img src="./assets/images/medalha.png" alt="">
+            <h2>high quality design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod, aliquam quos optio dignissimos accusantium deleniti nihil?</p>
+          </li>
+          <li class="service-item">
+            <img src="./assets/images/estrela.png" alt="">
+            <h2>modern design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod, aliquam quos optio dignissimos accusantium deleniti nihil?</p>
+          </li>
+          <li class="service-item">
+            <img src="./assets/images/relogio.png" alt="">
+            <h2>regular updates</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod, aliquam quos optio dignissimos accusantium deleniti nihil?</p>
+          </li>
+          <li class="service-item">
+            <img src="./assets/images/balao.png" alt="">
+            <h2>fast and free support</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod, aliquam quos optio dignissimos accusantium deleniti nihil?</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
