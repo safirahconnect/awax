@@ -1,5 +1,5 @@
 .services-bg {
-  background: #000;
+  background: var(--dark-bg);
 }
 
 .services-list {

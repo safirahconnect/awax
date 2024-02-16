@@ -1,5 +1,5 @@
 .projects-bg {
-  background: #f7f7f7;
+  background: var(--light-bg);
 }
 
 nav > * + * {

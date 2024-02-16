@@ -1,6 +1,8 @@
 :root {
   --offset: 4em;
   --inner-spacing: 2em;
+  --dark-bg: #000;
+  --light-bg: #f7f7f7;
 }
 
 .container {
@@ -8,9 +10,12 @@
   margin-inline: auto;
 }
 
+.container:not(.header.container, .team.container) {
+  padding-inline: var(--inner-spacing);
+}
+
 .container:not(.header.container) {
   padding-block: var(--offset);
-  padding-inline: var(--inner-spacing);
 }
 
 .container > * + *:not(.header.container nav) {
