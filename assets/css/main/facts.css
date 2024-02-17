@@ -1,0 +1,50 @@
+.facts-bg {
+  background: var(--dark-bg);
+}
+
+.facts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.fact-item > * + * {
+  margin-top: 1em;
+}
+
+.fact-item {
+  flex-basis: 240px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fact-item span {
+  color: #b68658;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.fact-item h2::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 4px;
+  background: #7e7e7e;
+  position: absolute;
+  top: -12px;
+}
+
+.fact-item h2 {
+  color: #fff;
+  flex: 1;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.fact-item p {
+  color: #7e7e7e;
+}

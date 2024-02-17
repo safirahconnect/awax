@@ -49,6 +49,10 @@
   margin-top: 1em;
 }
 
+.premium-slide-info-list h2 {
+  text-transform: uppercase;
+}
+
 .premium-pointers::before {
   content: "";
   display: block;
