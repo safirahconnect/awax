@@ -1,3 +1,8 @@
+.partners-bg {
+  border-top: 2px solid #cfcfcf;
+  border-bottom: 2px solid #cfcfcf;
+}
+
 .partners-list {
   display: flex;
   justify-content: center;
