@@ -1,0 +1,76 @@
+.footer-bg {
+  background: var(--dark-bg);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-list {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+}
+
+.footer-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #373737;
+  border-radius: 50%;
+}
+
+.footer-list a:hover,
+.footer-list li:first-child a {
+  background: #b28257;
+}
+
+.footer p {
+  color: #7e7e7e;
+  flex: 2;
+  flex-basis: 280px;
+}
+
+.footer .form > * + * {
+  margin-top: 1em;
+}
+
+.footer .form {
+  flex-grow: 1;
+  flex-basis: 280px;
+  background: #373737;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .form input {
+  font-size: 1rem;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  background: none;
+}
+
+.footer .form input:focus {
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
+
+.footer .form input::placeholder {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer span {
+  color: #fff;
+  flex-basis: 100%;
+}
