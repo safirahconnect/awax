@@ -1,0 +1,67 @@
+.share-bg {
+  border-bottom: 2px solid #cfcfcf;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.share p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #b2b2b2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.share p > img {
+  width: 23px;
+  height: 25px;
+}
+
+.share-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.share-social-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.share-social-item a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.share-social-item:first-child a {
+  background: #33c6ef;
+}
+
+.share-social-item:nth-child(2) a {
+  background: #107ce4;
+}
+
+.share-social-item:nth-child(3) a {
+  background: #336296;
+}
+
+.share-social-item:nth-child(4) a {
+  background: #e84035;
+}
+
+.share-social-item:last-child a {
+  background: #b71d19;
+}
+
+.share-social-item span {
+  font-weight: 700;
+  color: #bbb;
+  font-size: 0.75rem;
+}

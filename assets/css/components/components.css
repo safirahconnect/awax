@@ -18,7 +18,7 @@
   padding-block: var(--offset);
 }
 
-.container > * + *:not(.header.container nav) {
+.container > * + *:not(.header.container nav, .share .share-social-list) {
   margin-top: var(--offset);
 }
 
