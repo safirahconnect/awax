@@ -40,6 +40,9 @@
   height: 40px;
   border-radius: 50%;
   padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .share-social-item:first-child a {

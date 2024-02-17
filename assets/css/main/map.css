@@ -1,0 +1,38 @@
+.map-bg {
+  background: center / cover no-repeat url(../../images/mapa.jpg);
+}
+
+.map-bg-dark {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.map-list {
+  display: inline-block;
+  background: #fff;
+  padding: 40px;
+}
+
+.map-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.map-item + .map-item {
+  margin-top: 1em;
+}
+
+.map-item p,
+.map-item a {
+  color: #7e7e7e;
+}
+
+.map-item .map-icon {
+  background: #aeaeae;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}

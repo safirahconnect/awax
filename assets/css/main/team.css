@@ -55,6 +55,9 @@
   height: 40px;
   border-radius: 50%;
   padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-slide-item-social a:hover,
