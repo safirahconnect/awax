@@ -10,7 +10,7 @@
   margin-inline: auto;
 }
 
-.container:not(.header.container, .team.container) {
+.container:not(.header.container, .team.container, .clients.container) {
   padding-inline: var(--inner-spacing);
 }
 
