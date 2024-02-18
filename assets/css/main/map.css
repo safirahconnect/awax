@@ -6,6 +6,10 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
+.map {
+  container-type: inline-size;
+}
+
 .map-list {
   display: inline-block;
   background: #fff;
@@ -35,4 +39,21 @@
   border-radius: 50%;
   display: flex;
   align-items: center;
+}
+
+@container (max-width: 800px) {
+  .map-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@container (max-width: 600px) {
+  .map-item {
+    flex-direction: column;
+  }
+  .map-item p,
+  .map-item a {
+    font-size: 0.875rem;
+  }
 }

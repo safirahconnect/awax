@@ -2,8 +2,13 @@
   background: var(--dark-bg);
 }
 
+.services {
+  container-type: inline-size;
+}
+
 .services-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .services-list h2 {
@@ -19,6 +24,8 @@
 }
 
 .service-item {
+  flex-grow: 1;
+  flex-basis: 200px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -42,4 +49,11 @@
 
 .service-item p {
   line-height: 1.4;
+}
+
+@container (max-width: 1000px) {
+  .service-item,
+  .service-item:first-child {
+    border: none;
+  }
 }

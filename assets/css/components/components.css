@@ -10,7 +10,7 @@
   margin-inline: auto;
 }
 
-.container:not(.header.container, .team.container, .clients.container) {
+.container:not(.team.container, .clients.container) {
   padding-inline: var(--inner-spacing);
 }
 
@@ -21,13 +21,21 @@
 .container
   > *
   + *:not(
-    .header.container nav,
+    .header nav,
+    .header > img,
     .share .share-social-list,
     .footer p,
     .footer form,
     .footer span
   ) {
   margin-top: var(--offset);
+}
+
+@media (max-width: 800px) {
+  :root {
+    --offset: 2em;
+    --inner-spacing: 2em;
+  }
 }
 
 .title,
@@ -60,6 +68,15 @@
   color: #888;
 }
 
+@media (max-width: 600px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+  .title p {
+    font-size: 1rem;
+  }
+}
+
 .botao {
   display: inline-block;
   background: #b28257;
@@ -69,6 +86,12 @@
   border-radius: 24px;
   color: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .botao {
+    font-size: 0.875rem;
+  }
 }
 
 .form button {

@@ -27,7 +27,7 @@
 }
 
 .team-slide-item {
-  flex-basis: 280px;
+  flex-grow: 1;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -83,4 +83,16 @@
 .team-pointer:hover {
   background: #a0754e;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .team {
+    max-width: 634px;
+  }
+}
+
+@media (max-width: 800px) {
+  .team {
+    max-width: 307px;
+  }
 }

@@ -10,11 +10,9 @@
   gap: 1rem;
 }
 
-.price-list > * {
-  flex: 1;
-}
-
 .price-item {
+  flex-basis: 240px;
+  flex-grow: 1;
   text-align: center;
   background: #fff;
   padding: 1em;

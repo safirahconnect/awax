@@ -6,6 +6,11 @@ nav > * + * {
   margin-top: 3em;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
 .projects nav {
   display: flex;
   flex-direction: column;
@@ -14,6 +19,7 @@ nav > * + * {
 
 .projects-menu {
   display: flex;
+  flex-wrap: wrap;
   border-radius: 20px;
   background: #ededed;
   padding-inline: 1em;
@@ -36,7 +42,7 @@ nav > * + * {
 
 .projects-menu li a {
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .projects-list {
@@ -46,6 +52,7 @@ nav > * + * {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 1em;
 }
 
 .project-item {
@@ -82,4 +89,8 @@ nav > * + * {
 
 .project-item-info p {
   line-height: 1.6;
+}
+
+.projects .botao {
+  align-self: center;
 }

@@ -4,9 +4,14 @@
 }
 
 .header {
+  container-type: inline-size;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-mobile {
+  display: none;
 }
 
 .header-menu {
@@ -30,4 +35,44 @@
 .header-menu li:first-child a {
   border-color: #b28257;
   color: #ccc;
+}
+
+@container (max-width: 1000px) {
+  .menu-mobile {
+    display: block;
+    width: 40px;
+  }
+
+  .header nav {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 70vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .header-menu {
+    flex-direction: column;
+  }
+
+  .header-menu a {
+    height: 44px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+  }
+
+  .header-menu a:hover,
+  .header-menu li:first-child a {
+    color: #b28257;
+  }
+}
+
+@container (max-width: 480px) {
+  .header-menu a {
+    font-size: 1rem;
+  }
 }
