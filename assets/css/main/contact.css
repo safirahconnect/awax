@@ -5,7 +5,7 @@
 .contact .form {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .contact .form > *:not(.form button) {
@@ -22,7 +22,7 @@
 .contact .form input {
   font-size: 1rem;
   width: 100%;
-  padding: 8px;
+  padding: 0.5em;
   border: none;
   border-bottom: 2px solid #aeaeae;
   background: none;
