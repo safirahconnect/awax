@@ -4,7 +4,6 @@
 }
 
 .header {
-  container-type: inline-size;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,10 +36,11 @@
   color: #ccc;
 }
 
-@container (max-width: 1000px) {
+@media (max-width: 1000px) {
   .menu-mobile {
     display: block;
     width: 40px;
+    cursor: pointer;
   }
 
   .header nav {
@@ -52,6 +52,10 @@
     top: 100px;
     right: 0;
     background: rgba(0, 0, 0, 0.9);
+  }
+
+  .header nav.active {
+    display: block;
   }
 
   .header-menu {
@@ -71,7 +75,7 @@
   }
 }
 
-@container (max-width: 480px) {
+@media (max-width: 480px) {
   .header-menu a {
     font-size: 1rem;
   }

@@ -11,6 +11,15 @@
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preload" href="style.css" as="style">
+
+  <script>
+    window.onload = function () {
+      const mobile = document.querySelector(".menu-mobile");
+      mobile.addEventListener("click", function () {
+        document.querySelector(".header nav").classList.toggle("active")
+      })
+    };
+  </script>
 </head>
 
 <body>
