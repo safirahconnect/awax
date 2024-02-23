@@ -4,6 +4,7 @@
 
 .clients {
   overflow: hidden;
+  max-width: 960px;
 }
 
 .clients-sliders {
@@ -12,19 +13,15 @@
 }
 
 .clients-slide {
-  width: 100vw;
+  width: 960px;
 }
 
 .clients-slide-area {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 1.25rem;
 }
 
 .client-slide-item {
-  flex-basis: 280px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -59,4 +56,18 @@
 .client-pointer:hover {
   background: #a0754e;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .clients,
+  .clients-slide {
+    max-width: 634px;
+  }
+}
+
+@media (max-width: 800px) {
+  .clients,
+  .clients-slide {
+    max-width: 307px;
+  }
 }
