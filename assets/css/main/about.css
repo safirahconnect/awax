@@ -2,21 +2,21 @@
   background: var(--light-bg);
 }
 
-.about::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 19px;
-  background: center no-repeat url("../../images/telefone.png") #b28257;
-  position: absolute;
-  top: -24px;
-  right: 40px;
-  padding: 12px;
-  border-radius: 50%;
-}
-
 .about {
   container-type: inline-size;
+}
+
+.about > a {
+  position: absolute;
+  right: 40px;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  background: #b28257;
 }
 
 .about-area {

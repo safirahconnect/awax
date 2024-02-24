@@ -3,9 +3,23 @@
 }
 
 .footer {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
+}
+
+.footer > a {
+  position: absolute;
+  right: 40px;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  background: #b28257;
 }
 
 .footer-list {
