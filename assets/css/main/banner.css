@@ -19,19 +19,6 @@
   position: relative;
 }
 
-.banner-slide::after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 19px;
-  background: center no-repeat url("../../images/telefone.png") #b28257;
-  position: absolute;
-  bottom: -12px;
-  right: 40px;
-  padding: 12px;
-  border-radius: 50%;
-}
-
 .banner-slide-area {
   height: 100%;
   display: flex;
