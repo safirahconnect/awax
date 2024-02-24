@@ -1,6 +1,7 @@
 .banner {
   height: calc(100vh - 100px);
   background: center / cover no-repeat url("../../images/bg.jpg") #333;
+  overflow: hidden;
 }
 
 .banner-sliders {
